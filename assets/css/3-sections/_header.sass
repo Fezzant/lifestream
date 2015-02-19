@@ -1,23 +1,23 @@
 header
-	@extend %background-image
 	height: 525px
-	background-position: 30px 20px, 50% 50%
-	background-image: url(), url(/assets/img/#{$header-path})
+	background: url(../img/lifestream_header.jpg) center center
+	background-size: cover
 	
 	nav
+	
 		float: right
 		margin: 30px 30px 0 0
-
+		
 		a
 			display: inline-block
 			margin-left: 35px
-
+			
 			color: rgba(255,255,255,0.5)
 			@extend %small-bold
-
+			
 			&:hover
 				color: rgba(255,255,255,1)
-
+				
 	h1
 		text-align: center
 		font:
@@ -28,16 +28,20 @@ header
 		letter-spacing: 0.1em
 		margin-bottom: 20px	
 		clear: both
-		padding-top: 80px
-
+		padding-top: 90px
+		
 		span
 			display: inline-block
-			padding: 0.2em 0.5em
+			padding: 20px
 			border: white solid 10px
-
+			
 	.kicker
-		@extend %small-bold
 		text-align: center
-		letter-spacing: 0.05em
+		font:
+			size: 16px
+			weight: 700
+			outline: 3px
+		text-transform: uppercase
 		color: white
+		letter-spacing: 3px
 		line-height: 1
