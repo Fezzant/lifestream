@@ -1,12 +1,12 @@
-<footer>
+<footer id="footer">
 
   <div class="lockup">
     
 		<div class="content-wrap">
 			<nav>
-				<a href="#appliances">Appliances</a>
-				<a href="#calendar">Calendar</a>
-				<a href="#contact">Contact</a>
+				{% for item in site.data.settings.menu %}
+					<a href="{{ item.url }}">{{ item.name }}</a>
+				{% endfor %}
 			</nav>
     
 		<p class="copyright">All content copyright 2015</p>
