@@ -1,8 +1,9 @@
 $(function() {
 	smoothScroll(500);
+	applianceBelt();
 });
 
-// smoothScroll function is applied from the document ready function
+
 function smoothScroll (duration) {
 	$('a[href^="#"]').on('click', function(event) {
 
@@ -16,6 +17,20 @@ function smoothScroll (duration) {
 	    }
 	});
 }
+
+
+function applianceBelt() {
+	$('.thumb-unit').click(function() {
+		$('.appliance-belt').css('left','-100%');
+    $('.appliance-container').show();
+	});
+	
+	$('.appliance-return').click(function() {
+		$('.appliance-belt').css('left','0%');
+    $('.appliance-container').hide(800);
+	});
+}
+
 
 ////////////////////////////////////////////////////////////////////////////////////
 
