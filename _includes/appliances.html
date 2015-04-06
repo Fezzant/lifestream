@@ -19,14 +19,10 @@
 		<div class="appliance-wrap">
 			<div class="appliance-container">
 			<div class="appliance-return">{% include icons/icon-back.html %}</div>
-
-				<h4>Appliance Stuffs</h4>
-				<div style="width: 600px; height: 500px; background: #ccc;"></div>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-				<div style="width: 600px; height: 500px; background: #ccc;"></div>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-				<div style="width: 600px; height: 500px; background: #ccc;"></div>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+			<h4 class="appliance-title">Washing Machine</h4>
+			<div style="width: 600px; height: 500px; background: #ccc;">
+				{% include washingMachineControl.php %}
+				{% include washingMachineStatusOutput.php %}
 			</div>
 		</div>
 	

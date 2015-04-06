@@ -17,10 +17,9 @@ menu:
 
 appliances:
 - {name: Washing Machine, folder: 'appliance_01'}
-- {name: Washing Machine, folder: 'appliance_01'}
-- {name: Washing Machine, folder: 'appliance_01'}
-- {name: Washing Machine, folder: 'appliance_01'}
-- {name: Washing Machine, folder: 'appliance_01'}
-- {name: Washing Machine, folder: 'appliance_01'}
-- {name: Washing Machine, folder: 'appliance_01'}
-- {name: Washing Machine, folder: 'appliance_01'}
+- {name: Dishwasher, folder: 'appliance_02'}
+- {name: Oven, folder: 'appliance_03'}
+- {name: Hi-Fi, folder: 'appliance_04'}
+- {name: Lighting, folder: 'appliance_05'}
+- {name: Hot Water, folder: 'appliance_06'}
+- {name: Central Heating, folder: 'appliance_07'}
