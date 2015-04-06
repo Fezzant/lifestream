@@ -33,5 +33,15 @@ function applianceBelt() {
 }
 
 function applianceLoad() {
-	$.ajaxSetup ({ cache: true })
+	$.ajaxSetup({ cache: false });
+	
+	$('.thumb-unit').click(function() {
+		var $this = $(this),
+			newTitle = $this.find('strong').text(),
+			newFolder = $this.data('folder'),
+			spinner = '<div class="loader">Loading...</div>',
+			newHTML = '/appliances/'+ newFolder +'.php';
+		$('.appliance-load').html(spinner).load(newHTML);
+		$('.appliance-title').text(newTitle);
+	});
 }

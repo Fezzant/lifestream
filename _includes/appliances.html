@@ -6,8 +6,8 @@
 	
 		<div class="thumb-wrap">			
 			<div class="thumb-container">
-			{% for appliance in site.data.settings.appliances %}
-			<div class="thumb-unit" style="background-image: url(/assets/img/appliances/{{appliance.folder}}/thumb.jpg);"> 
+				{% for appliance in site.data.settings.appliances %}
+				<div class="thumb-unit" data-folder="{{appliance.folder}}" style="background-image: url(/assets/img/appliances/{{appliance.folder}}/thumb.jpg);"> 
 				<div class="thumb-overlay">
 					<strong>{{ appliance.name }}</strong>
 				</div>
@@ -18,14 +18,10 @@
 						
 		<div class="appliance-wrap">
 			<div class="appliance-container">
-			<div class="appliance-return">{% include icons/icon-back.html %}</div>
-			<h4 class="appliance-title">Washing Machine</h4>
-			<div style="width: 600px; height: 500px; background: #ccc;">
-				{% include washingMachineControl.php %}
-				{% include washingMachineStatusOutput.php %}
+				<div class="appliance-return">{% include icons/icon-back.html %}</div>
+				<h4 class="appliance-title">Washing Machine</h4>
+				<div class="appliance-load"></div>
 			</div>
 		</div>
-	
 	</div>
-
 </section>
