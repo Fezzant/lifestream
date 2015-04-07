@@ -30,11 +30,24 @@
 					echo ( $status[0] );
 				}
 			}
-			?>			
-			<?php
-				//Retrieve the current washing machine status to be printed on screen.
-					echo file_get_contents("../washingMachineStatus.html");
-			?>		
+			?>
+
+			<!-- JQuery Script to load the washing machine status file every 250ms updating the contents of the status div -->
+			<script src="jquery.min.js" type="text/javascript"></script>
+			<script type="text/javascript">
+			 
+			$(function() {
+				getStatus();
+			});
+			 
+			function getStatus() {
+				$('div#status').load('washingMachineStatus.html');
+				setTimeout("getStatus()",250);
+			}
+			 
+			</script>
+			<div id="status"></div>
+
 		</div>
 		<script src="assets/js/gpio.js"></script>
     </body>
