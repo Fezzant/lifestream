@@ -4,13 +4,27 @@
         <meta charset="utf-8" />
     </head>
     <body>
-		<div style="width: 600px; height: 500px; background: #ccc;">
-			<?php
-			//Initialise the buttons in their "up" positions
-			echo ("<img id='button_power' src='assets/img/powerUp.png' alt='off'/>");
-			echo ("<img id='button_progSelect' src='assets/img/progSelectUp.png' alt='off'/>");
-			echo ("<img id='button_progStart' src='assets/img/progStartUp.png' alt='off'/>");
+		<div style="width: 600px; height: 500px; background: #b4b4b4;">
+			<!--Initialise the buttons in their "up" positions-->
+			<div class="btn-power">
+				<?php
+					echo ("<img id='button_power' src='assets/img/appliances/appliance_01/powerUp.png' alt='off'/>");
+				?>	
+			</div>
+			<div class="btn-programmeControl">
+				<div class="btn-progSelect">
+					<?php
+						echo ("<img id='button_progSelect' src='assets/img/appliances/appliance_01/progSelectUp.png' alt='off'/>");
+					?>
+				</div>
+				<div class="btn-progStart">
+					<?php
+						echo ("<img id='button_progStart' src='assets/img/appliances/appliance_01/progStartUp.png' alt='off'/>");
+					?>
+				</div>
+			</div>
 
+			<?php
 			//Getting and using pin and status values.
 			if (isset ($_GET["pin"]) && isset($_GET["status"]) ) {
 				$pin = strip_tags($_GET["pin"]);
@@ -35,19 +49,23 @@
 			<!-- JQuery Script to load the washing machine status file every 250ms updating the contents of the status div -->
 			<script src="jquery.min.js" type="text/javascript"></script>
 			<script type="text/javascript">
-			 
+			var timer = setInterval(function(){getStatus();},250);
+
 			$(function() {
 				getStatus();
 			});
 			 
 			function getStatus() {
-				$('div#status').load('washingMachineStatus.html');
-				setTimeout("getStatus()",250);
+				$('div#status').load('washingMachineStatus.php');
 			}
-			 
 			</script>
-			<div id="status"></div>
-
+			
+			<div class="status-panel">
+				<div class="status-textbox">
+					<div id="status"></div>
+				</div>
+			</div>
+			
 		</div>
 		<script src="assets/js/gpio.js"></script>
     </body>
