@@ -27,13 +27,13 @@ button_progSelect.addEventListener("mousedown", function () {
 	var new_status = change_pin ( 8, 0);
 	if (new_status !== "fail") { 
 		button_progSelect.alt = "on";
-		button_progSelect.src = "assets/img/progSelectDown.png";
+		button_progSelect.src = "assets/img/appliances/appliance_01/progSelectDown.png";
 		return 0;
 	}
 } );
 button_progSelect.addEventListener("mouseup", function () {
 	button_progSelect.alt = "off";
-	button_progSelect.src = "assets/img/progSelectUp.png";
+	button_progSelect.src = "assets/img/appliances/appliance_01/progSelectUp.png";
 	return 0;
 } );
 
@@ -41,13 +41,13 @@ button_progStart.addEventListener("mousedown", function () {
 	var new_status = change_pin ( 9, 0);
 	if (new_status !== "fail") { 
 		button_progStart.alt = "on";
-		button_progStart.src = "assets/img/progStartDown.png";
+		button_progStart.src = "assets/img/appliances/appliance_01/progStartDown.png";
 		return 0;
 	}
 } );
 button_progStart.addEventListener("mouseup", function () {
 	button_progStart.alt = "off";
-	button_progStart.src = "assets/img/progStartUp.png";
+	button_progStart.src = "assets/img/appliances/appliance_01/progStartUp.png";
 	return 0;
 } );
 
@@ -55,12 +55,12 @@ button_power.addEventListener("mousedown", function () {
 	var new_status = change_pin ( 12, 0);
 	if (new_status !== "fail") { 
 		button_power.alt = "on";
-		button_power.src = "assets/img/powerDown.png";
+		button_power.src = "assets/img/appliances/appliance_01/powerDown.png";
 		return 0;
 	}
 } );
 button_power.addEventListener("mouseup", function () {
 	button_power.alt = "off";
-	button_power.src = "assets/img/powerUp.png";
+	button_power.src = "assets/img/appliances/appliance_01/powerUp.png";
 	return 0;
 } );
