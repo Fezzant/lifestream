@@ -299,11 +299,11 @@ svg {
 h3 {
   color: #1e383e;
   text-align: center;
-  padding: 100px 0 30px; }
+  padding: 60px 0 30px; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   h3 {
-    padding: 50px 0 50px; } }
+    padding: 60px 0 30px; } }
 .alt-section {
   background: #FFFFFF;
   padding-bottom: 100px; }
@@ -540,7 +540,7 @@ footer {
       position: relative;
       padding-left: 20px;
       padding-right: 20px; }
-  @media (max-width: 480px) {
+  @media (max-width: 500px) {
     .appliance-control-panel .btn-programmeControl {
       float: left;
       max-width: 300px;
