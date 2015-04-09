@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
     </head>
     <body>
-		<div style="width: 600px; height: 500px; background: #b4b4b4;">
+		<div class="appliance-control-panel">
 			<!--Initialise the buttons in their "up" positions-->
 			<div class="btn-power">
 				<?php
