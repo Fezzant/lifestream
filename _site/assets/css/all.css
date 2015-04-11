@@ -402,10 +402,7 @@ footer {
 .appliance-belt {
   width: 200%;
   position: relative;
-  left: 0%;
-  -webkit-transition: all 800ms;
-  -moz-transition: all 800ms;
-  transition: all 800ms; }
+  left: 0%; }
 
 .thumb-wrap, .appliance-wrap {
   width: 50%;

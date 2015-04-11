@@ -18,8 +18,6 @@
 		
 			<a href="#appliances">Appliances</a>
 		
-			<a href="#contact">Contact</a>
-		
 	</nav>
   
 	<h1><span>Lifestream</span></h1>
@@ -29,7 +27,7 @@
 
 		<section class="alt-section section-appliance">
 
-	<h3 id="#appliances">- - - Appliances - - -</h3>
+	<h3 id="appliances">- - - Appliances - - -</h3>
 	
 	<div class="appliance-belt">
 	

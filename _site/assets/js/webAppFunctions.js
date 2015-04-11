@@ -20,16 +20,29 @@ function smoothScroll (duration) {
 	});
 }
 
-
 function applianceBelt() {
+	var animationLength = 1000;
+
 	$('.thumb-unit').click(function() {
-		$('.appliance-belt').css('left','-100%');
-    $('.appliance-container').show();
+		$('.appliance-container').show();
+
+		$('.appliance-belt').animate({
+			'left': '-100%'
+		}, animationLength, function() {
+			$('.appliance-belt').css('left','0%');
+			$('.thumb-wrap').css('display','none');
+		});
 	});
-	
+
 	$('.appliance-return').click(function() {
-		$('.appliance-belt').css('left','0%');
-    $('.appliance-container').hide(800);
+		$('.appliance-belt').css('left','-100%');
+		$('.thumb-wrap').css('display','block');
+
+		$('.appliance-belt').animate({
+			'left': '0%'
+		}, animationLength, function() {
+			$('.appliance-container').hide();
+		});
 	});
 }
 
